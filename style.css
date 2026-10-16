@@ -203,7 +203,8 @@ body {
 
 /* --- トップページ（HOME）専用 --- */
 .home-hero {
-  min-height: max(100vh, 850px);;
+  aspect-ratio: 1672 / 940;
+  min-height: 700px;
   padding: 0 8%;
   display: flex;
   flex-direction: column;
@@ -356,6 +357,10 @@ margin-top: 260px;
   background-position: right center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+
+    /* 2416:432 の縦横比を維持 */
+  aspect-ratio: 2416 / 432;
+  min-height: 0;
 }
 
 .sub-hero .hero-overlay {
